@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+    no-damn-advertising:
+        container_name: noDamnAdvertisingDev
+
+        environment:
+            FORCE_COLOR: 1
+
+        volumes:
+            - ./src:/app/src
+            - ./public:/app/public
+
+        ports:
+            - 35729:35729
+            - ${INSPECT_APP_PORT-9230}:9229
+            - ${HOST_APP_PORT-3302}:80

@@ -1,0 +1,36 @@
+.wrapper {
+  width: 700px;
+  max-width: 100vw;
+  height: 400px;
+  max-height: 400px;
+  background-color: white;
+  box-shadow: rgba(228, 3, 3, 0.7) 5px 5px, rgba(255, 140, 0, 0.7) 10px 10px,
+    rgba(255, 237, 0, 0.7) 15px 15px, rgba(0, 128, 38, 0.7) 20px 20px,
+    rgba(0, 77, 255, 0.7) 25px 25px, rgba(117, 7, 135, 0.7) 30px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 100px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #424242;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-weight: bold;
+}

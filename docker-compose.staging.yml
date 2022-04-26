@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+    no-damn-advertising:
+        build:
+            dockerfile: Dockerfile.staging
+
+        container_name: noDamnAdvertisingStg
+
+        environment:
+            VIRTUAL_HOST: ${HOST?Missing environment variable see doku}
+            VIRTUAL_PORT: 80
+            LETSENCRYPT_HOST: ${HOST:?Missing environment variable see readme}
+
+        networks:
+            - nginxproxynet
+
+networks:
+    nginxproxynet:
+        name: ${PROXY_NETWORK_NAME-nginxproxynet}
+        external: true
