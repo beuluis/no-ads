@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="https://media.makeameme.org/created/no-more-ads-5ce622.jpg" alt="Logo" height="60">
+  <img src="https://media.makeameme.org/created/no-more-ads-5ce622.jpg" alt="Logo" height="300">
 
   <h3 align="center">no-ads</h3>
 
